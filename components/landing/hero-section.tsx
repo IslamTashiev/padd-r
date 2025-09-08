@@ -15,20 +15,19 @@ export function HeroSection() {
     <section
       className="relative min-h-[100vh] flex items-end md:items-center lg:items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{
-        backgroundImage: isMobile
-          ? "url(/images/main-mobile-bg.png)"
-          : "url(/images/main-bg.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundImage: "url(/videos/main-bg.gif)",
+        backgroundSize: !isMobile ? "cover" : "contain",
+        backgroundPosition: isMobile ? "center 0px" : "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <video
-        src="/videos/main-bg.mp4"
-        autoPlay
-        muted
-        loop
+      {/* <img
+        src="/videos/main-bg.gif"
+        // autoPlay
+        // muted
+        // loop
         className="absolute inset-0 w-full h-full object-cover"
-      />
+      /> */}
       {/* Background gradient */}
       {/* <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-black to-black" /> */}
 
