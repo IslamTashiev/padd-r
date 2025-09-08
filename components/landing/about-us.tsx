@@ -20,7 +20,7 @@ export function AboutUs() {
           { value: "99%", label: "Uptime" },
         ].map((stat, index) => (
           <div key={index} className="text-center">
-            <div className="text-2xl md:text-5xl font-bold text-emerald-400 mb-1">
+            <div className="text-5xl md:text-5xl font-bold text-emerald-400 mb-1">
               {stat.value}
             </div>
             <div className="text-sm text-gray-400 font-medium">

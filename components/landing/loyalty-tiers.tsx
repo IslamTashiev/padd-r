@@ -47,7 +47,12 @@ export function LoyaltyTiers() {
       dayRange: "180-365 days",
       discount: "5%",
       title: "4% NFT bonuses per year",
-      perks: ["Free delivery", "Basic support"],
+      perks: [
+        "5% discount on rentals with PADD-R tokens",
+        "+1 hour free rental",
+        "$50 rental coupon (covers up to 10% cost)",
+        "10% discount at Paddock Restaurant",
+      ],
       nft: "Bronze NFT",
       color: "from-amber-600 to-amber-800",
       icon: Zap,
@@ -61,7 +66,12 @@ export function LoyaltyTiers() {
       dayRange: "365-547 days",
       discount: "7%",
       title: "6% NFT bonuses per year",
-      perks: ["Car upgrades 2x/year", "Priority booking"],
+      perks: [
+        "5% discount on rentals with PADD-R tokens",
+        "+2 hours free rental",
+        "3x $150 rental coupons (covers up to 15% cost)",
+        "15% discount at Paddock auto service",
+      ],
       nft: "Silver NFT",
       color: "from-gray-400 to-gray-600",
       icon: Star,
@@ -75,7 +85,12 @@ export function LoyaltyTiers() {
       dayRange: "547-912 days",
       discount: "10%",
       title: "8% NFT bonuses per year",
-      perks: ["VIP restaurant access", "Premium rentals"],
+      perks: [
+        "5% discount on rentals with PADD-R tokens",
+        "+3 hours free rental",
+        "6x $600 rental coupons (covers up to 20% cost)",
+        "Unlimited mileage",
+      ],
       nft: "Gold NFT",
       color: "from-yellow-400 to-yellow-600",
       icon: Crown,
@@ -89,7 +104,12 @@ export function LoyaltyTiers() {
       dayRange: "912+ days",
       discount: "12%",
       title: "10% NFT bonuses per year",
-      perks: ["Track days", "Personal manager"],
+      perks: [
+        "5% discount on rentals with PADD-R tokens",
+        "+5 hours free rental",
+        "12x $1250 rental coupons (covers up to 25% cost)",
+        "Exclusive raffles: sports car rental, 5 hotel weekend",
+      ],
       nft: "Platinum NFT",
       color: "from-emerald-400 to-emerald-600",
       icon: Gem,
@@ -164,7 +184,10 @@ export function LoyaltyTiers() {
             </Card>
           ))} */}
           {tiers.map((tier, index) => (
-            <div key={index} className="bg-[#4C4C4C] rounded-[40px]">
+            <div
+              key={index}
+              className="bg-[#4C4C4C] rounded-[40px] flex flex-col justify-between"
+            >
               <p
                 className="text-[50px] font-bold text-center"
                 style={{ color: tier.mainColor }}
@@ -175,7 +198,7 @@ export function LoyaltyTiers() {
                 <p className="text-base font-extrabold italic">{tier.title}</p>
                 <ul className="list-disc list-inside mt-2 pb-4">
                   {tier.perks.map((perk, i) => (
-                    <li key={i} className="text-base font-medium">
+                    <li key={i} className="text-sm font-medium">
                       {perk}
                     </li>
                   ))}

@@ -90,10 +90,10 @@ export function UtilityHighlights() {
           ))} */}
           {utilities.map((utility, index) => (
             <div
-              className="bg-[#0F131C] rounded-2xl flex justify-between"
+              className="bg-[#0F131C] rounded-2xl flex justify-between relative h-[300px]"
               key={index}
             >
-              <div className="p-6 ">
+              <div className="p-6 max-w-[60%]">
                 <p className="text-emerald-400 bg-[#34D39912] px-2  rounded-md inline-block mb-4">
                   {utility.tag}
                 </p>
@@ -103,7 +103,7 @@ export function UtilityHighlights() {
               <img
                 src={utility.image}
                 alt={utility.title}
-                className="object-contain rounded-2xl md:h-fit md:w-fit lg:h-fit lg:w-fit h-1/2 ml-auto mt-auto"
+                className="object-contain rounded-2xl md:h-fit md:w-fit lg:h-fit lg:w-fit h-2/3 ml-auto mt-auto absolute right-0 bottom-0"
               />
             </div>
           ))}

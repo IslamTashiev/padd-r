@@ -39,33 +39,30 @@ export function NFTMarketplace() {
       type: "Tradeable NFT",
       tier: "Silver",
       benefits: ["7% discount", "Car upgrades 2x/year", "Priority booking"],
-      image:
-        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/images/silver-nft.png",
       tradeable: true,
       rarity: "Common",
       price: "1.2 BNB",
-    },
-    {
-      name: "Gold NFT",
-      type: "Tradeable NFT",
-      tier: "Gold",
-      benefits: ["10% discount", "VIP restaurant access", "Premium rentals"],
-      image:
-        "https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&w=400",
-      tradeable: true,
-      rarity: "Legendary",
-      price: "2.5 BNB",
     },
     {
       name: "Platinum NFT",
       type: "Tradeable NFT",
       tier: "Platinum",
       benefits: ["12% discount", "Track days", "Personal manager"],
-      image:
-        "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/images/platinum-nft.png",
+      tradeable: true,
+      rarity: "Legendary",
+      price: "8.0 BNB",
+    },
+    {
+      name: "Gold NFT",
+      type: "Tradeable NFT",
+      tier: "Gold",
+      benefits: ["10% discount", "VIP restaurant access", "Premium rentals"],
+      image: "/images/gold-nft.png",
       tradeable: true,
       rarity: "Common",
-      price: "8.0 BNB",
+      price: "2.5 BNB",
     },
   ];
 
