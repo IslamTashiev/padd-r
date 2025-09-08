@@ -40,6 +40,7 @@ export function NFTMarketplace() {
       tier: "Silver",
       benefits: ["7% discount", "Car upgrades 2x/year", "Priority booking"],
       image: "/images/silver-nft.png",
+      video: "/videos/silver.mp4",
       tradeable: true,
       rarity: "Common",
       price: "1.2 BNB",
@@ -50,6 +51,7 @@ export function NFTMarketplace() {
       tier: "Platinum",
       benefits: ["12% discount", "Track days", "Personal manager"],
       image: "/images/platinum-nft.png",
+      video: "/videos/platinum.mp4",
       tradeable: true,
       rarity: "Legendary",
       price: "8.0 BNB",
@@ -60,6 +62,7 @@ export function NFTMarketplace() {
       tier: "Gold",
       benefits: ["10% discount", "VIP restaurant access", "Premium rentals"],
       image: "/images/gold-nft.png",
+      video: "/videos/gold.mp4",
       tradeable: true,
       rarity: "Common",
       price: "2.5 BNB",
@@ -85,9 +88,11 @@ export function NFTMarketplace() {
               className="bg-gray-900/50 border-gray-800 card-hover group overflow-hidden"
             >
               <div className="relative">
-                <img
-                  src={nft.image}
-                  alt={nft.name}
+                <video
+                  src={nft.video}
+                  autoPlay
+                  muted
+                  loop
                   className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {nft.rarity !== "Legendary" ? (

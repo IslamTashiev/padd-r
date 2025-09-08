@@ -22,6 +22,13 @@ export function HeroSection() {
         backgroundPosition: "center",
       }}
     >
+      <video
+        src="/videos/main-bg.mp4"
+        autoPlay
+        muted
+        loop
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       {/* Background gradient */}
       {/* <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-black to-black" /> */}
 
