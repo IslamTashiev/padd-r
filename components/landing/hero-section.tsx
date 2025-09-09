@@ -16,10 +16,10 @@ export function HeroSection() {
       className="relative min-h-[100vh] lg:min-h-[120vh] md:min-h-[110vh] flex items-end lg:items-start md:items-start md:pt-36 lg:pt-36 justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{
         backgroundImage: "url(/videos/main-bg.gif)",
-        backgroundSize: !isMobile ? "contain" : "contain",
-        backgroundPosition: isMobile ? "center 0px" : "right",
+        backgroundSize: !isMobile ? "cover" : "contain",
+        backgroundPosition: isMobile ? "center 0px" : "center",
         backgroundRepeat: "no-repeat",
-        minHeight: isMobile ? "100vh" : "100vh",
+        minHeight: isMobile ? "100vh" : "120vh",
       }}
     >
       {/* <img
