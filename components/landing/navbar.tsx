@@ -49,7 +49,7 @@ export function Navbar() {
             <Logo />
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-3 lg:space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}

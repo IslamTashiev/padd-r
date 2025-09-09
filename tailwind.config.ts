@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        unbounded: ["var(--font-unbounded)"],
+        sans: ["var(--font-urbanist)"],
+      },
       textShadow: {
         glow: "0 0 0px #fff, 0 0 20px #fff, 0 0 0px #fff, 0 0 8px #fff",
       },

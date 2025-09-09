@@ -121,7 +121,7 @@ export function LoyaltyTiers() {
 
   return (
     <section id="tiers" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-950/50">
-      <div className="container mx-auto">
+      <div className="lg-container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Loyalty Tiers</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -130,7 +130,7 @@ export function LoyaltyTiers() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  mx-auto">
           {/* {tiers.map((tier, index) => (
             <Card 
               key={index} 
@@ -189,43 +189,49 @@ export function LoyaltyTiers() {
               className="bg-[#4C4C4C] rounded-[40px] flex flex-col justify-between"
             >
               <p
-                className="text-[50px] font-bold text-center"
+                className="text-[50px] font-bold text-center font-unbounded"
                 style={{ color: tier.mainColor }}
               >
                 {tier.name}
               </p>
-              <div className="bg-[#1A1A1A] rounded-[40px] p-6">
-                <p className="text-base font-extrabold italic">{tier.title}</p>
-                <ul className="list-disc list-inside mt-2 pb-4">
-                  {tier.perks.map((perk, i) => (
-                    <li key={i} className="text-sm font-medium">
-                      {perk}
-                    </li>
-                  ))}
-                </ul>
-                <hr />
-
-                <div className="mt-4 flex items-center justify-between">
-                  <p className="text-base font-medium ">
-                    <span className="font-bold text-2xl">{tier.amount} </span>
-                    <span className="text-[#868686] text-base font-bold">
-                      {tier.duration}
-                    </span>
+              <div className="bg-[#1A1A1A] rounded-[40px] p-6 max-h-[340px] h-full flex flex-col justify-between">
+                <div>
+                  <p className="text-base font-extrabold italic">
+                    {tier.title}
                   </p>
-                  {tier.popular && (
-                    <div className="text-base rounded-full px-2 py-1 font-medium text-center bg-[#059669]">
-                      Most Popular
-                    </div>
-                  )}
+                  <ul className="list-disc list-inside mt-2 pb-4">
+                    {tier.perks.map((perk, i) => (
+                      <li key={i} className="text-sm font-medium">
+                        {perk}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <button
-                  className={cn(
-                    "w-full text-base font-bold py-2 rounded-lg bg-gradient-to-br mt-3",
-                    tier.color
-                  )}
-                >
-                  Get membership
-                </button>
+
+                <div>
+                  <hr />
+                  <div className="mt-4 flex items-center justify-between">
+                    <p className="text-base font-medium ">
+                      <span className="font-bold text-2xl">{tier.amount} </span>
+                      <span className="text-[#868686] text-base font-bold">
+                        {tier.duration}
+                      </span>
+                    </p>
+                    {tier.popular && (
+                      <div className="text-base rounded-full px-2 py-1 font-medium text-center bg-[#059669]">
+                        Most Popular
+                      </div>
+                    )}
+                  </div>
+                  <button
+                    className={cn(
+                      "w-full text-base font-bold py-2 rounded-lg bg-gradient-to-br mt-3",
+                      tier.color
+                    )}
+                  >
+                    Get membership
+                  </button>
+                </div>
               </div>
             </div>
           ))}

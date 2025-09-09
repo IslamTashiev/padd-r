@@ -13,12 +13,13 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative min-h-[100vh] flex items-end md:items-center lg:items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative min-h-[120vh] flex items-end md:items-center lg:items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{
         backgroundImage: "url(/videos/main-bg.gif)",
         backgroundSize: !isMobile ? "cover" : "contain",
         backgroundPosition: isMobile ? "center 0px" : "center",
         backgroundRepeat: "no-repeat",
+        minHeight: isMobile ? "100vh" : "120vh",
       }}
     >
       {/* <img
