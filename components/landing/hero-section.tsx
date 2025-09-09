@@ -17,9 +17,9 @@ export function HeroSection() {
       style={{
         backgroundImage: "url(/videos/main-bg.gif)",
         backgroundSize: !isMobile ? "cover" : "contain",
-        backgroundPosition: isMobile ? "center 0px" : "center",
+        backgroundPosition: isMobile ? "center 0px" : "center -100px",
         backgroundRepeat: "no-repeat",
-        minHeight: isMobile ? "100vh" : "120vh",
+        minHeight: isMobile ? "100vh" : "125vh",
       }}
     >
       {/* <img
