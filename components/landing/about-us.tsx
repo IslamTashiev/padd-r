@@ -23,7 +23,7 @@ export function AboutUs() {
             <div className="text-5xl md:text-5xl lg:text-[56px] font-bold text-[#079669] mb-1 font-grtsk">
               {stat.value}
             </div>
-            <div className="text-sm text-white font-medium">{stat.label}</div>
+            <div className="text-2xl text-white font-medium">{stat.label}</div>
           </div>
         ))}
       </div>
