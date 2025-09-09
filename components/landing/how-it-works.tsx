@@ -14,7 +14,7 @@ export function HowItWorks() {
     {
       icon: Shield,
       title: "Stake",
-      description: "Lock tokens for 6 months to 2.5+ years to unlock tiers",
+      description: "Lock tokens for 3, 6, 9, 12 months to unlock tiers",
       color: "from-emerald-500 to-emerald-600",
     },
     {
@@ -38,7 +38,9 @@ export function HowItWorks() {
     >
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-unbounded">
+            How It Works
+          </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Simple steps to unlock real-world luxury experiences based on
             staking duration

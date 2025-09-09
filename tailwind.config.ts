@@ -14,7 +14,7 @@ const config: Config = {
         sans: ["var(--font-urbanist)"],
       },
       textShadow: {
-        glow: "0 0 0px #fff, 0 0 20px #fff, 0 0 0px #fff, 0 0 8px #fff",
+        glow: "0 0 0px #fff, 0 0 5px #fff, 0 0 0px #fff, 0 0 8px #fff",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

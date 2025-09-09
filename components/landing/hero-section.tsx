@@ -13,7 +13,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative min-h-[120vh] flex items-end md:items-center lg:items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative min-h-[100vh] lg:min-h-[120vh] md:min-h-[110vh] flex items-end lg:items-start md:items-start md:pt-36 lg:pt-36 justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{
         backgroundImage: "url(/videos/main-bg.gif)",
         backgroundSize: !isMobile ? "cover" : "contain",
@@ -41,11 +41,13 @@ export function HeroSection() {
 
       <div className="container mx-auto text-start md:text-center lg:text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <p>
+          <h1 className="text-[32px] md:text-[56px] lg:text-[56px] font-semibold lg:font-bold md:font-bold mb-6 leading-tight">
+            <p className="font-unbounded">
               Drive, Dine, Stay <br /> powered by{" "}
             </p>
-            <span className="text-white text-shadow-glow">PADD-R Token</span>
+            <span className="text-white text-shadow-glow font-unbounded">
+              PADD-R Token
+            </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">

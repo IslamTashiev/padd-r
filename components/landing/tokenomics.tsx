@@ -49,7 +49,9 @@ export function Tokenomics() {
     <section id="tokenomics" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Tokenomics</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-unbounded">
+            Tokenomics
+          </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Designed for long-term utility and ecosystem growth
           </p>
@@ -67,7 +69,7 @@ export function Tokenomics() {
           >
             <div className="w-full p-8 ">
               <div className="text-center lg:text-left">
-                <h3 className="text-2xl font-bold mb-4 flex items-center justify-center lg:justify-start">
+                <h3 className="text-3xl font-bold mb-4 flex items-center justify-center lg:justify-start font-unbounded">
                   <PieChart className="mr-3 text-emerald-400" size={24} />
                   Token Distribution
                 </h3>
@@ -99,7 +101,7 @@ export function Tokenomics() {
             <img
               src="/images/token-coin.png"
               alt="Tokenomics Chart"
-              className="object-contain h-fit lg:w-fit w-[100%] mt-auto"
+              className="object-contain h-fit lg:w-fit w-[100%] mt-auto self-end"
             />
           </div>
 
@@ -107,7 +109,7 @@ export function Tokenomics() {
           <div className="space-y-6 flex flex-col lg:flex-row gap-6">
             <Card className="bg-gray-900/50 w-full lg:w-1/2 border-gray-800 rounded-3xl">
               <CardHeader>
-                <CardTitle className="text-2xl text-white">
+                <CardTitle className="text-3xl text-white font-unbounded">
                   Token Information
                 </CardTitle>
               </CardHeader>
@@ -128,7 +130,7 @@ export function Tokenomics() {
 
             <Card className="bg-gradient-to-r w-full lg:w-1/2 from-emerald-900/20 to-emerald-800/20 border-emerald-800 !m-0 py-4 rounded-3xl">
               <CardContent>
-                <h4 className="text-3xl font-bold text-white mb-3">
+                <h4 className="text-3xl font-bold text-white mb-3 font-unbounded">
                   Important Notice
                 </h4>
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">

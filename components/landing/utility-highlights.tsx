@@ -47,7 +47,7 @@ export function UtilityHighlights() {
     <section id="utilities" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-unbounded">
             Utility Ecosystem
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -93,7 +93,7 @@ export function UtilityHighlights() {
               className="bg-[#0F131C] rounded-2xl flex justify-between relative h-[300px]"
               key={index}
             >
-              <div className="p-6 max-w-[60%]">
+              <div className="p-6 max-w-[75%] lg:max-w-[60%]">
                 <p className="text-emerald-400 bg-[#34D39912] px-2  rounded-md inline-block mb-4">
                   {utility.tag}
                 </p>

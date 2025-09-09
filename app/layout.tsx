@@ -2,6 +2,8 @@ import "./globals.css";
 import "./rainbowkit.css";
 import type { Metadata } from "next";
 import { Urbanist, Unbounded } from "next/font/google";
+import localFont from "next/font/local";
+
 import { ThemeProvider } from "@/components/theme-provider";
 import { RainbowProvider } from "@/components/providers/rainbow-provider";
 
@@ -15,6 +17,11 @@ const unbounded = Unbounded({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-unbounded",
+});
+
+const grtsk = localFont({
+  src: "../public/fonts/grtsk-tera-8.ttf",
+  variable: "--font-grtsk",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${urbanist.variable} ${unbounded.variable} font-sans bg-black text-white antialiased`}
+        className={`${urbanist.variable} ${unbounded.variable} ${grtsk.variable} font-sans bg-black text-white antialiased`}
       >
         <ThemeProvider
           attribute="class"
