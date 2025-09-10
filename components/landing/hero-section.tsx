@@ -14,21 +14,31 @@ export function HeroSection() {
   return (
     <section
       className="relative min-h-[100vh] lg:min-h-[120vh] md:min-h-[110vh] flex items-end lg:items-start md:items-start md:pt-36 lg:pt-36 justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
-      style={{
-        backgroundImage: "url(/videos/main-bg.gif)",
-        backgroundSize: !isMobile ? "cover" : "contain",
-        backgroundPosition: isMobile ? "center 0px" : "center -100px",
-        backgroundRepeat: "no-repeat",
-        minHeight: isMobile ? "100vh" : "125vh",
-      }}
+      // style={{
+      //   backgroundImage: "url(/videos/main-bg.gif)",
+      //   backgroundSize: !isMobile ? "cover" : "contain",
+      //   backgroundPosition: isMobile ? "center 0px" : "center -100px",
+      //   backgroundRepeat: "no-repeat",
+      //   minHeight: isMobile ? "100vh" : "125vh",
+      // }}
     >
-      {/* <img
-        src="/videos/main-bg.gif"
-        // autoPlay
-        // muted
-        // loop
-        className="absolute inset-0 w-full h-full object-cover"
-      /> */}
+      {isMobile ? (
+        <video
+          src="/videos/test.mp4"
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full  object-contain"
+        />
+      ) : (
+        <video
+          src="/videos/test.mp4"
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
       {/* Background gradient */}
       {/* <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-black to-black" /> */}
 
