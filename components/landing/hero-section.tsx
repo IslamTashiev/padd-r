@@ -28,6 +28,7 @@ export function HeroSection() {
           autoPlay
           muted
           loop
+          controls={false}
           className="absolute inset-0 w-full  object-contain"
         />
       ) : (
@@ -36,6 +37,7 @@ export function HeroSection() {
           autoPlay
           muted
           loop
+          controls={false}
           className="absolute inset-0 w-full -top-32 object-contain"
         />
       )}
