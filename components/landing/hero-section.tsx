@@ -14,15 +14,15 @@ export function HeroSection() {
   return (
     <section
       className="relative min-h-[100vh] lg:min-h-[120vh] md:min-h-[110vh] flex items-end lg:items-start md:items-start md:pt-36 lg:pt-36 justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
-      // style={{
-      //   backgroundImage: "url(/videos/main-bg.gif)",
-      //   backgroundSize: !isMobile ? "cover" : "contain",
-      //   backgroundPosition: isMobile ? "center 0px" : "center -100px",
-      //   backgroundRepeat: "no-repeat",
-      //   minHeight: isMobile ? "100vh" : "125vh",
-      // }}
+      style={{
+        backgroundImage: "url(/images/main-bg.png)",
+        backgroundSize: !isMobile ? "contain" : "contain",
+        backgroundPosition: isMobile ? "center 30px" : "center 0px",
+        backgroundRepeat: "no-repeat",
+        minHeight: isMobile ? "100vh" : "100vh",
+      }}
     >
-      {isMobile ? (
+      {/* {isMobile ? (
         <video
           src="/videos/test.mp4"
           autoPlay
@@ -38,16 +38,7 @@ export function HeroSection() {
           loop
           className="absolute inset-0 w-full -top-32 object-contain"
         />
-      )}
-      {/* Background gradient */}
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-black to-black" /> */}
-
-      {/* Animated background elements */}
-      {/* <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl animate-float" />
-      <div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-400/5 rounded-full blur-3xl animate-float"
-        style={{ animationDelay: "2s" }}
-      /> */}
+      )} */}
 
       <div className="container mx-auto text-start md:text-center lg:text-center relative z-10">
         <div className="max-w-5xl mx-auto">
