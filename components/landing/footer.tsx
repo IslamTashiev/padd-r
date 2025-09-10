@@ -1,36 +1,36 @@
-'use client';
+"use client";
 
-import { Logo } from '@/components/ui/logo';
-import { Separator } from '@/components/ui/separator';
-import { ExternalLink, MessageCircle, Twitter, FileText } from 'lucide-react';
+import { Logo } from "@/components/ui/logo";
+import { Separator } from "@/components/ui/separator";
+import { ExternalLink, MessageCircle, Twitter, FileText } from "lucide-react";
 
 export function Footer() {
   const footerSections = [
     {
-      title: 'Resources',
+      title: "Resources",
       links: [
-        { name: 'Whitepaper', href: '#', icon: FileText },
-        { name: 'Audit Report', href: '#', icon: FileText },
-        { name: 'BscScan', href: '#', icon: ExternalLink },
-        { name: 'PancakeSwap', href: '#', icon: ExternalLink },
+        { name: "Whitepaper", href: "#", icon: FileText },
+        { name: "Audit Report", href: "#", icon: FileText },
+        { name: "BscScan", href: "#", icon: ExternalLink },
+        { name: "PancakeSwap", href: "#", icon: ExternalLink },
       ],
     },
     {
-      title: 'Community',
+      title: "Community",
       links: [
-        { name: 'Telegram', href: '#', icon: MessageCircle },
-        { name: 'Twitter', href: '#', icon: Twitter },
-        { name: 'Discord', href: '#', icon: MessageCircle },
-        { name: 'Medium', href: '#', icon: FileText },
+        { name: "Telegram", href: "#", icon: MessageCircle },
+        { name: "Twitter", href: "#", icon: Twitter },
+        { name: "Discord", href: "#", icon: MessageCircle },
+        { name: "Medium", href: "#", icon: FileText },
       ],
     },
     {
-      title: 'Legal',
+      title: "Legal",
       links: [
-        { name: 'Terms of Use', href: '#', icon: FileText },
-        { name: 'Privacy Policy', href: '#', icon: FileText },
-        { name: 'Risk Disclosure', href: '#', icon: FileText },
-        { name: 'Cookie Policy', href: '#', icon: FileText },
+        { name: "Terms of Use", href: "#", icon: FileText },
+        { name: "Privacy Policy", href: "#", icon: FileText },
+        { name: "Risk Disclosure", href: "#", icon: FileText },
+        { name: "Cookie Policy", href: "#", icon: FileText },
       ],
     },
   ];
@@ -43,14 +43,14 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-gray-400 text-sm leading-relaxed">
-              Premium utility token for real-world luxury experiences in Dubai and beyond. 
-              Your key to exclusive services and rewards.
+              Premium utility token for real-world luxury experiences in Dubai
+              and beyond. Your key to exclusive services and rewards.
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Twitter, href: '#' },
-                { icon: MessageCircle, href: '#' },
-                { icon: ExternalLink, href: '#' },
+                { icon: Twitter, href: "#" },
+                { icon: MessageCircle, href: "#" },
+                { icon: ExternalLink, href: "#" },
               ].map((social, index) => (
                 <a
                   key={index}
@@ -62,7 +62,7 @@ export function Footer() {
               ))}
             </div>
           </div>
-          
+
           {/* Footer Links */}
           {footerSections.map((section, index) => (
             <div key={index}>
@@ -74,7 +74,10 @@ export function Footer() {
                     href={link.href}
                     className="flex items-center text-gray-400 hover:text-emerald-400 transition-colors text-sm group"
                   >
-                    <link.icon size={14} className="mr-2 group-hover:text-emerald-400" />
+                    <link.icon
+                      size={14}
+                      className="mr-2 group-hover:text-emerald-400"
+                    />
                     {link.name}
                   </a>
                 ))}
@@ -82,27 +85,35 @@ export function Footer() {
             </div>
           ))}
         </div>
-        
+
         <Separator className="bg-gray-800 mb-8" />
-        
+
         {/* Legal Disclaimer */}
         <div className="space-y-6">
           <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
-            <h5 className="font-semibold text-white mb-3">⚠️ Legal Disclaimer</h5>
+            <h5 className="font-semibold text-white mb-3">⚠️ Disclaimer</h5>
             <p className="text-sm text-gray-400 leading-relaxed">
-              <strong className="text-white">PADD-R is a utility token.</strong> It does not represent equity, income, or investment. 
-              Rewards are not guaranteed and may vary based on ecosystem development and partnerships. 
-              This website does not constitute financial advice. Please conduct your own research and 
-              consult with financial advisors before making any decisions. Token holders are responsible 
-              for compliance with local regulations.
+              <strong className="text-white">
+                PADD-R is a utility token for loyalty and membership benefits
+                only.
+              </strong>{" "}
+              It is not equity, income, or an investment product, and it does
+              not guarantee profits or returns. Rewards may vary depending on
+              ecosystem development and partnerships. This information does not
+              constitute financial advice. Please conduct your own research and
+              consult with licensed financial advisors before making any
+              decisions. Token holders are responsible for compliance with
+              applicable local regulations.
             </p>
           </div>
-          
+
           <div className="text-center text-sm text-gray-500">
             <p>&copy; 2025 PADD-R Token. All rights reserved.</p>
             <p className="mt-2">
-              Built with ❤️ for the luxury service ecosystem • 
-              <span className="text-emerald-400 ml-1">Powered by Binance Smart Chain</span>
+              Built with ❤️ for the luxury service ecosystem •
+              <span className="text-emerald-400 ml-1">
+                Powered by Binance Smart Chain
+              </span>
             </p>
           </div>
         </div>

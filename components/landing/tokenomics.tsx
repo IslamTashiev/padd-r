@@ -7,39 +7,39 @@ import { ExternalLink, PieChart } from "lucide-react";
 export function Tokenomics() {
   const distribution = [
     {
-      label: "Ecosystem",
-      percent: 40,
+      label: "Team",
+      percent: 5,
       color: "bg-emerald-500",
       description: "Rewards, partnerships, utility development",
     },
     {
-      label: "Growth Reserve",
-      percent: 25,
+      label: "Early Investors",
+      percent: 10,
       color: "bg-blue-500",
       description: "Future expansion and strategic initiatives",
     },
     {
-      label: "Team",
-      percent: 15,
+      label: "Ecosystem development",
+      percent: 20,
       color: "bg-purple-500",
       description: "24-month vesting schedule",
     },
     {
       label: "Liquidity",
-      percent: 10,
+      percent: 65,
       color: "bg-yellow-500",
       description: "DEX liquidity and market making",
     },
-    {
-      label: "Marketing",
-      percent: 10,
-      color: "bg-orange-500",
-      description: "Community growth and partnerships",
-    },
+    // {
+    //   label: "Marketing",
+    //   percent: 10,
+    //   color: "bg-orange-500",
+    //   description: "Community growth and partnerships",
+    // },
   ];
 
   const tokenInfo = [
-    { label: "Total Supply", value: "100,000,000,000 PADD-R" },
+    { label: "Total Supply", value: "1,000,000,000 PADD-R" },
     { label: "Initial Circulating", value: "250,000,000 PADD-R" },
     { label: "Token Standard", value: "BEP-20" },
     { label: "Network", value: "Binance Smart Chain" },
