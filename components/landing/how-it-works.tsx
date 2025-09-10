@@ -14,7 +14,7 @@ export function HowItWorks() {
     {
       icon: Shield,
       title: "Stake",
-      description: "Lock tokens for 3, 6, 9, 12 months to unlock tiers",
+      description: "Lock tokens for 1, 3, 6, 12 months to unlock tiers",
       color: "from-emerald-500 to-emerald-600",
     },
     {

@@ -93,12 +93,14 @@ export function UtilityHighlights() {
               className="bg-[#0F131C] rounded-2xl flex justify-between relative h-[300px]"
               key={index}
             >
-              <div className="p-6 max-w-[75%] lg:max-w-[60%]">
+              <div className="p-6 max-w-[100%] md:max-w-[75%] lg:max-w-[60%]">
                 <p className="text-emerald-400 bg-[#34D39912] px-2  rounded-md inline-block mb-4">
                   {utility.tag}
                 </p>
                 <p className="text-3xl font-bold">{utility.title}</p>
-                <p className="text-[#9CA3AF]">{utility.description}</p>
+                <p className="text-[#9CA3AF] max-w-[60%] md:max-w-[100%] lg:max-w-[100%]">
+                  {utility.description}
+                </p>
               </div>
               <img
                 src={utility.image}

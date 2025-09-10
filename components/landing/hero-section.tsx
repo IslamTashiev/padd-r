@@ -10,10 +10,14 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 export function HeroSection() {
   const { isConnected } = useWallet();
   const isMobile = useMediaQuery("(max-width: 768px)");
+  const isHeightMobile = useMediaQuery("(max-height: 768px)");
 
   return (
     <section
       className="relative min-h-[100vh] lg:min-h-[120vh] md:min-h-[110vh] flex items-end lg:items-start md:items-start md:pt-36 lg:pt-36 justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
+      style={{
+        minHeight: isHeightMobile ? "120vh" : "100vh",
+      }}
       // style={{
       //   backgroundImage: "url(/videos/main-bg.gif)",
       //   backgroundSize: !isMobile ? "cover" : "contain",
