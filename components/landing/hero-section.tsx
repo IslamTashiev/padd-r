@@ -36,7 +36,7 @@ export function HeroSection() {
           autoPlay
           muted
           loop
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full -top-32 object-contain"
         />
       )}
       {/* Background gradient */}
