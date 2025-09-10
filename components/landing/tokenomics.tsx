@@ -39,8 +39,8 @@ export function Tokenomics() {
   ];
 
   const tokenInfo = [
-    { label: "Total Supply", value: "100,000,000 PADD-R" },
-    { label: "Initial Circulating", value: "25,000,000 PADD-R" },
+    { label: "Total Supply", value: "100,000,000,000 PADD-R" },
+    { label: "Initial Circulating", value: "250,000,000 PADD-R" },
     { label: "Token Standard", value: "BEP-20" },
     { label: "Network", value: "Binance Smart Chain" },
   ];
